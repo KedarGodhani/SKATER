@@ -1,0 +1,615 @@
+/* oswald-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/oswald-v53-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald-v53-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ------------------- Rubik  font---------------*/
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v28-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v28-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ============defult css-==================== */
+:root {
+  --black-color: #222;
+  --yellow-color: #f58601;
+  --white-color: #fff;
+  --gray-color: #333333;
+  --yellow1-color:#F58601;
+}
+.navbar-expand {
+  background-color: var(--black-color);
+}
+/* .container {
+  max-width: 1140px;
+  margin: auto;
+} */
+body {
+  font-family: "Rubik", "Oswald";
+  background-color: #222;
+}
+p {
+  font-family: "Rubik";
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald";
+}
+
+a {
+  font-family: "Rubik";
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+ul .ol {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+.spacer {
+  padding: 90px 0;
+  padding-bottom: 90px 0;
+}
+/* ===========================header=========-=========== */
+/* .social a{
+    color: var(--white-color);
+  } */
+
+.social a:hover {
+  color: var(--yellow-color);
+}
+.social i {
+  font-size: 18px;
+  margin-right: 15px;
+}
+.navbar-brand {
+  color: var(--yellow-color);
+  font-family: "Rubik";
+  font-weight: 600;
+  font-size: 19px;
+  margin-left: 10px;
+}
+.nav-item a {
+  color: var(--white-color);
+  font-family: "Rubik";
+  font-size: 16px;
+}
+
+.contect1 a {
+  color: var(--white-color);
+  font-size: 18px;
+}
+.contect1 a:hover {
+  color: var(--yellow-color);
+}
+
+.nav-link {
+  margin-right: 25px;
+  font-weight: 700;
+}
+.navbar-brand:hover {
+  color: var(--yellow-color);
+}
+.bg-black1 {
+  background-color: var(--black-color);
+}
+.navbar-toggler {
+  color: #fff;
+}
+.navbar{
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+/* -------------------- saider css-------------------- */
+
+.slider {
+  height: 600px;
+  background-size: cover;
+  /* background-position: center;    */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.slider1 {
+  background-image: url(../image/img1.jpeg);
+}
+.slider2 {
+  background-image: url(../image/img5.jpeg);
+}
+.slider3 {
+  background-image: url(../image/img1.jpeg);
+}
+.slider_text h1 {
+  font-size: 72px;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.slider_text1 p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-family: "Rubik";
+}
+.slider_text1 h1 {
+  font-size: 72px;
+  margin-bottom: 10px;
+  font-family: "Oswald";
+  line-height: 1;
+  text-transform: uppercase;
+}
+.btn {
+  padding: 8px 20px;
+}
+#slider1.owl-theme .owl-nav {
+  margin: 0;
+}
+#slider1.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border-radius: 50%;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  transition: 0.35s;
+}
+#slider1.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border-radius: 50%;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  transition: 0.35s;
+}
+/* #slider1.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: 1px solid white;
+  color: white;
+} */
+#slider1.owl-theme .owl-dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+#slider1.owl-theme .owl-dots .owl-dot span {
+  width: 20px;
+  height: 5px;
+  background-color: gray;
+  transition: 0.45s;
+}
+#slider1.owl-theme .owl-dots .owl-dot.active span {
+  background-color: white;
+  width: 10px;
+  border-radius: 100%;
+}
+/* ======================SERVICES start -================ */
+.back_color {
+  background-color: #2222;
+}
+.fs-2 h3 {
+  font-size: 22px;
+  font-family: "Oswald";
+}
+.body {
+  background-color: #222;
+}
+.feature-icon i {
+  color: var(--yellow-color);
+}
+.feature-icon i {
+  border-radius: 55%;
+  background-color: #333333;
+}
+.creative_main h2 {
+  color: var(--yellow-color);
+  font-size: 48px;
+}
+.creative_main p {
+  color: #939393;
+}
+.services p {
+  color: #939393;
+}
+.services h3 {
+  color: #fff;
+  font-size: 22px;
+}
+.container {
+  color: #222;
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* ================MY BEST PERFORMANCE start================ */
+.lead p {
+  color: #939393;
+}
+.my h2 {
+  font-size: 32px;
+  color: var(--yellow-color);
+}
+
+.fw-semibold h2 {
+  color: var(--yellow-color);
+  padding-bottom: 50px;
+}
+.row img {
+  text-align: top;
+  background-size: cover;
+  background-position: center center;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.text-secondary p {
+  font-size: 16px;
+  font-family: "Rubik";
+}
+.text i {
+  color: var(--yellow-color);
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.text p {
+  color: #939393;
+  padding-top: 20px;
+}
+.spacer1 {
+  padding-bottom: 0;
+}
+.col {
+  padding-left: 25px;
+}
+/* ===================== image 30+  start====================== */
+/* .img{
+  height: 100%;
+  width: 50%px;
+  overflow: hidden;
+  background-image: cover;
+
+} */
+.call h1 {
+  color: var(--yellow-color);
+  font-size: 64px;
+  font-family: "Rubik";
+}
+.call p {
+  color: white;
+  font-size: 14px;
+  font-family: "Rubik";
+}
+/* ================OUR TEAM start--------------------- */
+
+.feature-img {
+  height: 150px;
+  width: 100%;
+  border-radius: 50%;
+  justify-content: center;
+}
+.feature-img img {
+  border-radius: 50%;
+  /* padding-left: 20px; */
+  text-align: center;
+}
+.fw-normal {
+  color: #fff;
+}
+.fw-normal p {
+  color: #959695;
+  padding-bottom: 20px;
+  font-family: "Rubik";
+  font-size: 12px;
+}
+.fw-normal h4 {
+  color: var(--yellow-color);
+  /* padding-bottom: 0px; */
+  font-family: "Oswald";
+  font-size: 20px;
+}
+.fw-normal i {
+  color: #fff;
+  padding: 10px 10px;
+  margin: 4px;
+  background-color: var(--yellow-color);
+}
+.fw-normal i:hover {
+  color: #1b1d1f;
+  border: 1px solid var(--yellow-color);
+  background-color: #222222;
+}
+.creative_main p {
+  padding-bottom: 50px;
+}
+/* -=====================SESSION PRICING  start =================== */
+.basic h1 {
+  color: var(--yellow-color);
+  font-size: 48px;
+  font-family: "Rubik";
+}
+.basic h3 {
+  color: #fff;
+  font-size: 28px;
+  font-family: "Oswald";
+}
+.bl {
+  margin-bottom: 20px;
+}
+.text1 p {
+  color: #6c757d;
+}
+.text1-secondary p {
+  font-size: 16px;
+  font-family: "Rubik";
+}
+.text1 i {
+  color: green;
+  padding-top: 15px;
+  padding-right: 20px;
+}
+.text1 p {
+  color: #939393;
+  padding-top: 20px;
+}
+.btn {
+  margin-top: 15px;
+
+}
+.creative_peta p {
+  color: #525252;
+}
+.creative_peta h2 {
+  color: var(--yellow-color);
+  font-size: 48px;
+  font-family: "Oswald";
+}
+.basic {
+  background-color: #333333;
+}
+/* -==================FREQUENTLY ASK QUESTIONS start=============== */
+.all_text h3 {
+  font-size: 24px;
+  font-family: "Oswald";
+  color: var(--yellow-color);
+}
+.all_text p {
+  color: #939393;
+}
+.all_text {
+  /* padding-bottom: 25px; */
+  margin-bottom: 40px;
+  color: white;
+}
+.all_text1 h2 {
+  color: var(--yellow-color);
+  text-align: center;
+  padding-bottom: 80px;
+  font-size: 32px;
+}
+/* ====================TESTIMONIAL start ============= */
+.davin {
+  border-radius: 50%;
+  width: 100%;
+}
+.slider_text h3 {
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+}
+.item_l img {
+  width: 100%;
+  border-radius: 50%;
+}
+.slider_text p {
+  color: #fff;
+  font-size: 18px;
+  font-family: georgia;
+  background-color: #333333;
+  padding:40px 40px ;
+  height: 150%;
+  text-align: center;
+}
+.image img{
+  border-radius: 100%;
+  max-width : 100%;
+  display: block;
+
+}
+.the{
+  color: var(--yellow-color);
+  text-align: center;
+  padding-bottom: 30px ;
+  
+}
+.image img{
+  width: 50px!important;
+  height: 50px ;
+  margin: auto;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* ===============OUR BLOG start=================== */
+
+
+.text h3{
+  color: var(--yellow-color);
+  font-size: 32px;
+}
+.text h4{
+  color: var(--gray-color);
+}
+.text h6{
+  color: var(--gray-color);
+}
+.text span{
+  color: var(--black-color);
+  font-size: 16px;
+}
+.text h5{
+  color: var(--yellow-color);
+  font-size: 16px;
+  padding-top: 20px;
+
+}
+
+.our p{
+  color: #fff;
+}
+.our h2{
+  color: var(--yellow-color);
+}
+.main p{
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+
+}
+.main h2{
+  color: var(--yellow-color);
+  text-align: center;
+  font-size: 48px;
+
+}
+/* ==========================CONTACT ME start------------------ */
+.sid{
+  color: var(--white-color);
+  background-color: var(--yellow-color);
+
+}
+/* =========================== */
+
+.moll{
+  background-color: #333333;
+}
+
+.creative_main p {
+  padding-bottom: 50px;
+}
+.icon_text p{
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  
+}
+.icon_text h4{
+  color: #fff;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Oswald";
+}
+.icon h4{
+  color: #fff;
+  font-size: 16px;
+  font-family: "Oswald";
+  text-align: left;
+}
+.icon p{
+  color: gray;
+  font-size: 20px;
+  font-family: "Oswald";
+  text-align: left;
+}
+.icon p:hover{
+  color: #ffff;
+
+}
+.icon p {
+  color: #959695;
+  padding-bottom: 20px;
+  font-family: "Rubik";
+  font-size: 14px;
+}
+.icon h4 {
+  color: #fff;
+  margin-top: 30px ;
+  margin-bottom: 20px ;
+ 
+}
+.icon i {
+  color: gray;
+  padding: 10px;
+  text-align: left;
+  
+}
+.icon i:hover {
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  
+}
+.form-control{
+  border: 2px solid #333;
+}
+.pl{
+  color: #fff;
+  font-size: 16px;
+  font-family: "Rubik";
+  padding-top: 60px ;
+}
+.pl h5{
+  color: gray;
+  font-family: "Rubik";
+  font-size: 15px;
+  padding-top: 5px;
+  padding-top: 60px ;
+}
+.pl h5:hover{
+  color: #fff;
+}
+.pl i{
+  color: red;
+  padding-top: 60px ;
+}
+.pl p{
+  padding-top: 60px ;
+}

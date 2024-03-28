@@ -1,0 +1,22 @@
+
+@media(max-width:991px) 
+{
+
+    .slider_text1 h1{
+        font-size: 72px;
+    }
+
+}
+
+@media( max-width:767px) {
+
+    .social li{
+        margin-bottom: 15px;
+    }
+    .slider_text1 p{
+    font-size: 18px;
+    }
+    .slider_text1 h1{
+        font-size: 27px;
+    }
+}
